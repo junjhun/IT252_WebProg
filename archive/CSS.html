@@ -1,0 +1,189 @@
+<!-- 
+3 types CSS
+1. Inline
+2. Internal
+3. External
+
+Identifiers / Selectors:
+1. Tag
+2. Multiple Tags
+3. Class (.)
+4. ID (#)
+
+Box Model:
+1. Margin
+2. Border
+3. Padding
+4. Content
+
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mystyles.css">
+    <style>
+
+        header.nav.ul.li {
+            display: inline;
+            margin-right: 30px;
+            font-size: 55px;
+        }
+
+       /* id > class > tag */
+
+        .para1 {
+            color: red;
+            font-size: 30px;
+        }
+
+        #para_id_1 {
+            color: blue;
+            font-size: 30px;
+        }
+
+        p {
+            color: green;
+            font-size: 30px;
+            border: 1px solid black;
+            border-top: 5px solid black;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            /* 100% */
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: lightgray;
+            color: #334155;
+            line-height: 1.6;
+        }
+
+        #main-nav {
+            background-color: #1e293b;
+            color: white;
+            padding: 15px 30px;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+
+            display: flex;
+            gap: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 3s, font-size 3s;
+            font-size: 20px;
+        }
+
+        nav a:hover {
+            color: #38bdf8;
+            font-size: 50px;
+        }
+
+        
+
+        .profile-card {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            /* margin: 20px auto; */
+            /* margin-right: 20px;
+            margin-bottom: auto; */
+            border: 1px solid #e2e8f0;
+        }
+
+        main {
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 80vh;
+        }   
+
+        button {
+            background-color: #1e293b;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 3s;
+            margin: 10px auto;
+            display: block;
+        }
+
+        .login {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            /* margin: 20px auto; */
+            /* margin-right: 20px;
+            margin-bottom: auto; */
+            margin: auto;
+            border: 1px solid #e2e8f0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+    </style>
+</head>
+<body>
+    <header id="main-nav">
+        <h1>Jhun Calderon</h1>
+        <nav>
+            <ul>
+                <li style="font-size: 20px;"><a href="#header1">Home</a></li>
+                <li><a href="#main">Articles</a></li>
+                <li><a href="#footer" target="_blank">Footer</a></li>
+                <li><a href="https://www.linkedin.com/in/jhuncalderon" target="_blank">My LinkedIn Profile</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- <section class="profile-card">
+            <h2>About Me</h2>
+            <p>Lorem ipsum dolor</p>
+            <button>Contact</button>
+        </section> -->
+        <!-- <section class="profile-card">
+            <h2>About You</h2>
+            <p>Lorem ipsum dolor</p>
+            <button>Contact</button>
+        </section> -->
+        <section class="login">
+            <label>Username: </label><input type="text" name="username" id="username">
+            <label>Password: </label><input type="password" name="password" id="password">
+            <button>Login</button>
+        </section>
+    </main>
+    <!-- <p class="para1">Hello World!1</p>
+    <p class="para1">Hello World!2</p>
+    <p id="para_id_1" class="para1">Hello World!3</p>
+    <p>Hello World!4</p>
+    <p>Hello World!5</p> -->
+
+</body>
+</html>

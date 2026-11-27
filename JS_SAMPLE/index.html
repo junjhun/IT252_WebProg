@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First JS</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+        }
+    </script>
+
+    <script type="module" src="./js/main.js"></script>
+</head>
+<body>
+    <section>
+        <h2>Hello</h2>
+        <input
+            id="name-input"
+            type="text"
+            placeholder="Enter your name"
+        />
+        <button id="greet-btn">Greet</button>
+        <p id="greeting-output">Waiting for your name...</p>
+        
+    </section>
+</body>
+</html>
